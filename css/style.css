@@ -1,0 +1,344 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+    height:100%;
+    width:100%;
+    font-size:100%;
+    line-height:1;
+    font-size:0.9vw;
+    -ms-text-size-adjust:100%;
+    -moz-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%;
+    background-color: #151515;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+em{font-style: normal;}
+/*--------------------*/
+
+
+
+
+/*main wrappers*/
+header{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    background-color: #0a0a0a;
+}
+#main-wrapper{
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0 0 0;
+}
+nav,aside,main{
+    height: 100%;
+}
+nav, aside{
+    width: 16.666667%;    
+    text-transform: uppercase;
+    padding: 0 0 0 30px;
+}
+main{
+    width: 66.6666665%;
+    display: flex;
+    flex-direction: column;
+}
+/**/
+
+
+/*header*/
+
+.menu{
+    display: none;
+    background: url(../media/icons/menu.png) no-repeat;
+    width: 25%;
+    height: 100%;
+}
+#logo-wrap{
+    display: flex;
+    align-items: center;
+    width: 16.666665%;
+}
+#logo{
+    text-transform: uppercase;
+    text-decoration: none;
+    color:white;
+    margin-left: 1.09em;
+    font-size: 1.4vw;
+    font-weight: bold;
+}
+.first_word{
+    color: #f23005;
+}
+#header-center{
+    display: flex;
+    /*flex-grow: 1;*/
+    width: 66.666667%;
+}
+.data{
+    display: flex;
+    width: 68%;
+    align-items: center;
+    color: white;
+}
+#username{
+    font-size: 1.15vw;
+}
+#days_count{
+    color: #f23005;
+    font-size: 1.05vw;
+}
+p{
+    margin: 0 0 12px 15px;
+}
+#user_photo{
+    width: 90px;
+}
+.conteiner_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36%;
+    background-color: #f23005;
+}
+#search_form{
+    background-color: #f23005;
+    border-bottom: 1px solid white;
+    color: white;
+    width: 55%;
+}
+.search_but{
+    background: url(../media/icons/search.png) no-repeat;
+    width: 40px;
+    height: 40px;
+    margin: 0 0 0 10px;
+}
+.searching_wrap-form{
+    width: 75%;
+}
+
+/**/
+
+
+/*nav*/
+
+nav ul li{
+    margin: 0 0 50px 0;
+    display: flex;
+    align-items: center;
+}
+nav ul li::before{
+    margin-right: 16px;
+}
+nav ul li a{
+    color: white;
+}
+
+nav ul li:nth-child(1)::before{
+    content: url(../media/icons/ul/li1.png);
+}
+nav ul li:nth-child(2)::before{
+    content: url(../media/icons/ul/li2.png);
+}
+nav ul li:nth-child(3)::before{
+    content: url(../media/icons/ul/li3.png);
+}
+nav ul li:nth-child(4)::before{
+    content: url(../media/icons/ul/li4.png);
+}
+nav ul li:nth-child(5)::before{
+    content: url(../media/icons/ul/li5.png);
+}
+nav ul li:nth-child(6)::before{
+    content: url(../media/icons/ul/li6.png);
+}
+nav ul li:nth-child(7)::before{
+    content: url(../media/icons/ul/li7.png);
+}
+
+hr{
+    border: 1px solid #f23005;
+    margin: 75px 0 25px 0;
+    width: 47px;
+}
+
+/*table*/
+table{
+    width: 100%;
+}
+th{
+    color: white;
+    text-align: left;
+    padding: 0 0 5px 0;
+}
+tr{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.td_item{
+    color: #6e6e6e;
+}
+.td_meaning{
+    color: #f23005;
+    margin: 0 15% 0 0;
+}
+/**/
+
+/**/
+
+/*aside*/
+aside{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: white;
+}
+.playlist_icon{
+    width: 100%;
+    text-align: left;
+    padding: 0 0 60px 0;
+    display: flex;
+    align-items: center;
+}
+.playlist_icon::before{
+    content: url(../media/icons/playlist.png);
+    margin: 0 5px 0 0;
+}
+.playlist li{
+    padding: 0 0 50px 40px;
+}
+
+.playlist li a{
+    color: white;
+}
+
+/**/
+
+/*main*/
+
+/*best group of the week*/
+
+.most-popular_group{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+#photo_popular_group{
+    width: 100%;
+    height: 33vw;
+    position: relative;
+}
+.data_group{
+    position: absolute;
+    color: white;
+}
+#nameof_popular_group{
+    font-size: 3vw;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+.text_for_group{
+    font-size: 1.5vw;
+}
+
+/**/
+
+.albums{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    margin: 15px 0 0 0;
+}
+.album{
+    width: 24%;
+    margin: 0 0 1.5% 0;
+}
+
+.album img{
+    width: 100%;
+    height: 16vw;
+}
+
+/**/
+
+
+/*@media (min-width: 20em) {
+     Результат (100vw - 20rem) / (60 - 20) в диапазоне 0-1rem, 
+       в зависимости от ширины области просмотра (от 20em до 60em).
+    #logo {
+      font-size: calc( 1.0625em + 1.0625 * (100vw - 20rem) / (60 - 20) );
+    }
+  }
+  
+  @media (min-width: 60em) {
+    Правая часть дополнения ДОЛЖНА быть rem. 
+       В нашем примере мы МОЖЕМ заменить всё объявление
+       на font-size: 2.5rem, но если наше базовое значение
+       выражалось не в rem, то придётся использовать calc.
+    #logo {
+      font-size: calc( 1.0625em + 1.0625 * 1rem );
+    }
+  }
+*/
+
+@media (max-width:650px){
+    #logo{
+        font-size: 7vw;
+    }
+    .data{
+        display: none;
+    }
+    #header-center{
+        width: 25%;
+        justify-content: flex-end;
+    }
+    .search_but{
+        margin: 0;
+    }
+    #logo-wrap{
+        width: 75%;
+        justify-content: center;
+    }
+    .conteiner_form{
+        width: 100%;
+    }
+    #logo{
+        margin: 0;
+        text-align: center;
+    }
+    .menu{
+        display: block;
+    }
+}
+
+@media (max-width:900px){
+    .conteiner_form{
+        background-color: #0a0a0a;
+    }
+    #search_form{
+        display: none;
+    }
+    #header-center{
+        justify-content: flex-end;
+    }
+    .search_but{
+        margin: 0;
+    }
+}
